@@ -1,0 +1,22 @@
+@import url(./main_2.css);
+
+#hicont .hi2 {
+  color: blue;
+  font-weight: bold;
+  background-color: bisque;
+}
+
+div > span {
+  color: black;
+  background-color: aliceblue;
+}
+
+#stylecont > p {
+  color: white;
+  background-color: red;
+}
+
+#stylecont > h3 {
+  color: black;
+  background-color: coral;
+}
