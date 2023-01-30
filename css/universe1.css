@@ -20,3 +20,14 @@ div .orange {
 ul > .orange ~ li {
   color: blue;
 }
+
+a:hover {
+  background-color: red;
+}
+a:active {
+  background-color: orange;
+}
+
+input:focus {
+  background-color: orange;
+}
