@@ -52,3 +52,25 @@ class 사용법은 .을 찍고 class명 입력 */
 [type="password"] {
   background-color: orange;
 }
+
+/* id는 100점 */
+/* #item {
+  background-color: red !important;
+} */
+/* !important는 가장 우선으로 본다 */
+
+.list {
+  background-color: orange;
+}
+
+#item {
+  background-color: skyblue;
+}
+
+li {
+  background-color: red;
+}
+/* 
+* {
+  background-color: dodgerblue;
+} */
