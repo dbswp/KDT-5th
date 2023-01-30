@@ -1,0 +1,22 @@
+.orange {
+  color: orange;
+}
+
+/* span과 class가 orange인 상속자만 의미 */
+span.orange {
+  background-color: skyblue;
+}
+
+/* >를 사용하면 직계 상속자를 의미 */
+ul > .orange {
+  background-color: rgb(127, 148, 127);
+}
+
+/* div에서 한칸 띄우고 상속자를 쓰면 후손 */
+div .orange {
+  color: green;
+}
+
+ul > .orange ~ li {
+  color: blue;
+}
