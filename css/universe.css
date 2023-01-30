@@ -1,0 +1,21 @@
+* {
+  color: red;
+}
+
+li {
+  color: blue;
+}
+
+div {
+  color: green;
+}
+
+/* class 사용법은 .을 찍고 class명 입력 */
+.orange {
+  color: orange;
+}
+
+/* id 사용법은 #뒤에 id명 쓰기 */
+#orange {
+  color: red;
+}
