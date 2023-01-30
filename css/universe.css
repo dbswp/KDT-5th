@@ -1,6 +1,6 @@
 /* * {
   color: red;
-}
+} */
 
 li {
   color: blue;
@@ -8,24 +8,25 @@ li {
 
 div {
   color: green;
-} */
+}
+*/
 
-/* class 사용법은 .을 찍고 class명 입력 */
+class 사용법은 .을 찍고 class명 입력 */
 /* .orange {
   color: orange;
-} */
+}
 
 /* id 사용법은 #뒤에 id명 쓰기 */
-/* #orange {
+#orange {
   color: red;
-} */
+}
 
-/* .fruits span:first-child {
+.fruits span:first-child {
   color: red;
 }
 .fruits div:first-child {
   color: orange;
-} */
+}
 
 /* 홀수번째 자식 선택 */
 .fruits *:nth-child(2n + 1) {
@@ -34,4 +35,20 @@ div {
 
 .fruits *:not(span) {
   color: red;
+}
+
+.box::before {
+  content: "앞쪽 -";
+}
+
+.box::after {
+  content: "- 뒤쪽";
+}
+
+[disabled] {
+  background-color: red;
+}
+
+[type="password"] {
+  background-color: orange;
 }
