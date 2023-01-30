@@ -1,4 +1,4 @@
-.zoo .predator {
+.zoo *:nth-child(2n) {
   background-color: orange;
 }
 
