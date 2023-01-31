@@ -1,0 +1,40 @@
+body {
+  height: 3000px;
+}
+div {
+  font-size: 1em;
+}
+
+div > p {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+
+div > .font {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2;
+  /* em은 부모요소에 대한 상대적 값 */
+}
+
+.text_align {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+  text-align: center;
+  line-height: 200px;
+}
+div > a {
+  text-decoration: none;
+}
+.background_img {
+  background-color: orange;
+  background-image: url("http://res.heraldm.com/content/image/2020/04/29/20200429000196_0.jpg");
+  height: 3000px;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: scroll;
+}

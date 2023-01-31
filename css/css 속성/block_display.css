@@ -1,0 +1,48 @@
+div {
+  margin: 20px;
+}
+
+.block {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+}
+
+#block_display {
+  display: block;
+}
+
+#block_opacity {
+  opacity: 0.3;
+}
+
+#block_visibility {
+  visibility: visible;
+}
+
+.block1 {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+.block1:hover {
+  pointer-events: ;
+}
+.opacity {
+  background-color: orange;
+  opacity: 0.8;
+  /* 자리와 속성 남는다 */
+}
+.visibility {
+  background-color: tomato;
+  visibility: visible;
+  /* 자리만 남고 속성은 안보인다 */
+}
+.display {
+  background-color: deepskyblue;
+  display: inline-block;
+  /* 자리와 속성 모두 안남는다 */
+}
+.last {
+  background-color: dodgerblue;
+}

@@ -1,7 +1,3 @@
-div {
-  margin-top: 10px;
-}
-
 #block1 {
   display: inline-block;
   background-color: black;
@@ -69,4 +65,30 @@ html {
 
 #box_2 {
   box-sizing: border-box;
+}
+
+.parent {
+  margin-bottom: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+}
+.son {
+  margin: 20px;
+  width: 400px;
+  height: 400px;
+  background-color: darkcyan;
+}
+#parent_overflow {
+  overflow: hidden;
+}
+#parent2_overflow {
+  overflow: scroll;
+}
+#parent3_overflow {
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+#parent4_overflow {
+  overflow: auto;
 }
