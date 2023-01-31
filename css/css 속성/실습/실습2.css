@@ -1,0 +1,32 @@
+.block_margin {
+  width: calc(10vw + 10vh);
+  height: calc(10vw + 10vh);
+  margin: 10px;
+}
+
+#block_margin_a {
+  background-color: tomato;
+  margin: 20px 30px;
+}
+
+#block_margin_b {
+  background-color: coral;
+  margin: 10px 50px 20px;
+}
+
+#block_margin_c {
+  background-color: darkorange;
+  margin: 10px 20px 30px 40px;
+}
+
+#block_margin_d {
+  background-color: orange;
+  margin-top: 40px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+#block_margin_e {
+  background-color: sandybrown;
+}
