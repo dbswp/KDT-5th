@@ -1,0 +1,52 @@
+div {
+  margin-top: 10px;
+}
+
+#block1 {
+  display: inline-block;
+  background-color: black;
+  width: calc(100vw - 50vw);
+  height: 20vh;
+}
+/* vw,vh는 뷰포트 가로, 세로 길이 백분율 */
+
+#block2 {
+  display: inline-block;
+  width: 45vw;
+  height: 20vh;
+  background-color: brown;
+}
+
+#block3 {
+  background-color: cadetblue;
+  width: 50vw;
+  max-width: 500px;
+  height: 300px;
+  line-height: 300px;
+}
+
+.span1 {
+  display: inline-block;
+  background-color: chartreuse;
+  width: 5em;
+  height: 5em;
+}
+
+.span2 {
+  display: inline-block;
+  background-color: cornflowerblue;
+  width: 5rem;
+  height: 5rem;
+}
+
+.span3 {
+  display: inline-block;
+  background-color: blueviolet;
+  width: 300px;
+  height: 300px;
+}
+
+#span4 {
+  background-color: blue;
+  line-height: 2em;
+}
