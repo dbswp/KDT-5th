@@ -1,0 +1,26 @@
+.box {
+  background-color: tomato;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  border: solid 7px black;
+}
+
+#box_border_1 {
+  border-width: 3px 5px 7px 9px;
+}
+
+#box_border_2 {
+  border-style: dotted double solid dashed;
+}
+
+#box_border_3 {
+  border-color: blue blueviolet deepskyblue dodgerblue;
+}
+
+#box_border_4 {
+  border-top: 5px dotted yellow;
+  border-right: 7px groove blue;
+  border-bottom: 9px double green;
+  border-left-style: 11px dashed black;
+}
