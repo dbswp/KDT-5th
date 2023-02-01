@@ -1,0 +1,19 @@
+.contain {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  background-color: orange;
+  border: 1px solid black;
+}
+#container1 {
+  left: 280px;
+}
+#container2 {
+  left: 210px;
+}
+#container3 {
+  left: 140px;
+}
+#container4 {
+  left: 70px;
+}

@@ -1,0 +1,34 @@
+#main_container1 {
+  width: 300px;
+  height: 300px;
+  background-color: dodgerblue;
+  position: relative;
+}
+
+#container_1 {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  position: relative;
+  z-index: 1;
+}
+
+#container_2 {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 3;
+}
+
+#container_3 {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  z-index: 2;
+}

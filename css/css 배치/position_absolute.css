@@ -1,0 +1,34 @@
+#main_container1 {
+  width: 300px;
+  height: 300px;
+  background-color: dodgerblue;
+  position: relative;
+}
+.contain1 {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+}
+#container_1 {
+  width: 20rem;
+  height: 20rem;
+  background-color: orange;
+}
+#container_2 {
+  background-color: skyblue;
+  top: 0;
+  left: 10rem;
+}
+#container_3 {
+  background-color: tomato;
+  left: 20rem;
+}
+#container_4 {
+  background-color: dodgerblue;
+  top: 10rem;
+  left: 30rem;
+}
+#container_5 {
+  background-color: dodgerblue;
+  bottom: 0;
+}
