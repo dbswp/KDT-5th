@@ -1,0 +1,20 @@
+/* duration css */
+.contain {
+  width: 300px;
+  height: 300px;
+  background-color: yellow;
+}
+.contain1 {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  transition-duration: 3s;
+}
+
+.contain1:hover {
+  width: 300px;
+  height: 300px;
+  background-color: orange;
+}
+/* hover에 duration을 주게 되면 돌아갈때는 처음과 같음 */
+/* transition-proprety을 주게 되면 정한 요소를 먼저 바꿈 */
