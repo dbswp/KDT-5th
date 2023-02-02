@@ -1,5 +1,5 @@
 /* duration css */
-.contain {
+/* .contain {
   width: 300px;
   height: 300px;
   background-color: yellow;
@@ -15,6 +15,43 @@
   width: 300px;
   height: 300px;
   background-color: orange;
-}
+} */
 /* hover에 duration을 주게 되면 돌아갈때는 처음과 같음 */
 /* transition-proprety을 주게 되면 정한 요소를 먼저 바꿈 */
+
+/* transfrom css */
+div {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+/* .parent {
+  position: relative;
+  background-color: gray;
+}
+.child {
+  position: absolute;
+  background-color: dodgerblue;
+  opacity: 0.5;
+  transform: skew(45deg);
+} */
+
+.parent1 {
+  position: relative;
+  background-color: gray;
+  perspective: 500px;
+}
+.child1,
+.child2 {
+  position: absolute;
+  background-color: dodgerblue;
+  opacity: 1;
+  transition: 2s;
+}
+.child1:hover {
+  transform: rotate(720deg);
+}
+
+.child2:hover {
+  transform: rotateX(720deg);
+}
