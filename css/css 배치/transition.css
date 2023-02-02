@@ -20,11 +20,11 @@
 /* transition-proprety을 주게 되면 정한 요소를 먼저 바꿈 */
 
 /* transfrom css */
-div {
+/* div {
   width: 100px;
   height: 100px;
   margin: auto;
-}
+} */
 /* .parent {
   position: relative;
   background-color: gray;
@@ -54,4 +54,26 @@ div {
 
 .child2:hover {
   transform: rotateX(720deg);
+}
+
+/* 반응형 웹만들고 싶을 때 @media screen 사용 */
+@media screen and (min-width: 500px) {
+  body {
+    background-color: skyblue;
+  }
+}
+@media screen and (max-width: 300px) {
+  body {
+    background-color: orange;
+  }
+}
+@media screen and (max-height: 300px) {
+  p {
+    font-size: 32px;
+  }
+}
+@media screen and (min-height: 500px) {
+  body {
+    background-color: green;
+  }
 }

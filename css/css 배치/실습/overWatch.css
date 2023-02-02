@@ -1,0 +1,156 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .sub_container {
+  max-width: 700px;
+  padding: 50px 30px;
+  background-color: orange;
+  background-image: url("../../../images/images/bg.jpg");
+  background-size: cover;
+}
+
+.container .sub_container .heroes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+}
+
+.container .sub_container .heroes .hero {
+  width: 80px;
+  height: 90px;
+  margin: 4px;
+  border: 3px solid white;
+  transform: skew(-14deg);
+  border-radius: 10px;
+  background-color: gray;
+  overflow: hidden;
+}
+
+.container .sub_container .heroes .hero:hover {
+  z-index: 1;
+  background-color: orange;
+  border: orange;
+  transform: scale(1.3) skew(-14deg);
+  transition: background-color 0.5s, transform 0.1s;
+  cursor: pointer;
+}
+
+.container .sub_container .heroes .hero .image {
+  width: 100%;
+  height: 100%;
+  transform: skew(14deg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container .sub_container .logo {
+  display: flex;
+  justify-content: center;
+}
+.container .sub_container .logo img {
+  height: auto;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.container .heroes .hero:nth-child(1) .image {
+  background-image: url("../../../images/images/hero1.png");
+}
+.container .heroes .hero:nth-child(2) .image {
+  background-image: url("../../../images/images/hero2.png");
+}
+.container .heroes .hero:nth-child(3) .image {
+  background-image: url("../../../images/images/hero3.png");
+}
+.container .heroes .hero:nth-child(4) .image {
+  background-image: url("../../../images/images/hero4.png");
+}
+.container .heroes .hero:nth-child(5) .image {
+  background-image: url("../../../images/images/hero5.png");
+}
+.container .heroes .hero:nth-child(6) .image {
+  background-image: url("../../../images/images/hero6.png");
+}
+.container .heroes .hero:nth-child(7) .image {
+  background-image: url("../../../images/images/hero7.png");
+}
+.container .heroes .hero:nth-child(8) .image {
+  background-image: url("../../../images/images/hero8.png");
+}
+.container .heroes .hero:nth-child(9) .image {
+  background-image: url("../../../images/images/hero9.png");
+}
+.container .heroes .hero:nth-child(10) .image {
+  background-image: url("../../../images/images/hero10.png");
+}
+.container .heroes .hero:nth-child(11) .image {
+  background-image: url("../../../images/images/hero11.png");
+}
+.container .heroes .hero:nth-child(12) .image {
+  background-image: url("../../../images/images/hero12.png");
+}
+.container .heroes .hero:nth-child(13) .image {
+  background-image: url("../../../images/images/hero13.png");
+}
+.container .heroes .hero:nth-child(14) .image {
+  background-image: url("../../../images/images/hero14.png");
+}
+.container .heroes .hero:nth-child(15) .image {
+  background-image: url("../../../images/images/hero15.png");
+}
+.container .heroes .hero:nth-child(16) .image {
+  background-image: url("../../../images/images/hero16.png");
+}
+.container .heroes .hero:nth-child(17) .image {
+  background-image: url("../../../images/images/hero17.png");
+}
+.container .heroes .hero:nth-child(18) .image {
+  background-image: url("../../../images/images/hero18.png");
+}
+.container .heroes .hero:nth-child(19) .image {
+  background-image: url("../../../images/images/hero19.png");
+}
+.container .heroes .hero:nth-child(20) .image {
+  background-image: url("../../../images/images/hero20.png");
+}
+.container .heroes .hero:nth-child(21) .image {
+  background-image: url("../../../images/images/hero21.png");
+}
+.container .heroes .hero:nth-child(22) .image {
+  background-image: url("../../../images/images/hero22.png");
+}
+.container .heroes .hero:nth-child(23) .image {
+  background-image: url("../../../images/images/hero23.png");
+}
+.container .heroes .hero:nth-child(24) .image {
+  background-image: url("../../../images/images/hero24.png");
+}
+.container .heroes .hero:nth-child(25) .image {
+  background-image: url("../../../images/images/hero25.png");
+}
+.container .heroes .hero:nth-child(26) .image {
+  background-image: url("../../../images/images/hero26.png");
+}
+.container .heroes .hero:nth-child(27) .image {
+  background-image: url("../../../images/images/hero27.png");
+}
+.container .heroes .hero:nth-child(28) .image {
+  background-image: url("../../../images/images/hero28.png");
+}
+.container .heroes .hero:nth-child(29) .image {
+  background-image: url("../../../images/images/hero29.png");
+}
+.container .heroes .hero:nth-child(30) .image {
+  background-image: url("../../../images/images/hero30.png");
+}
+.container .heroes .hero:nth-child(31) .image {
+  background-image: url("../../../images/images/hero31.png");
+}
+.container .heroes .hero:nth-child(32) .image {
+  background-image: url("../../../images/images/hero32.png");
+}
