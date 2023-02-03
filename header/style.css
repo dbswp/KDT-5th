@@ -1,0 +1,117 @@
+/* common */
+body {
+}
+a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+/* BLOCK */
+header {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 4px 0 rgba(207, 207, 207, 0.5);
+}
+header .content {
+  width: 1200px;
+  height: 64px;
+  /* padding: 0 32px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+header .content .header__logo {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+header .content .header__logo a {
+  font-family: "Indie Flower", cursive;
+  color: green;
+}
+header .content .header__logo i {
+}
+
+/* MENU */
+header .content .header__menu__list {
+  font-size: 16px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+header .content .header__menu__list li {
+  padding: 0 16px; /*패딩값으로 수직중앙정렬 가능 */
+  /* line-height: 32px; */
+}
+header .content .header__menu__list li a {
+  color: #4a4a4a;
+}
+header .content .header__menu__list li a:hover {
+  color: #1dc078;
+}
+
+/* SPACE */
+header .content .header__space {
+  flex-grow: 1;
+}
+
+/* SEARCH */
+header .content .header__search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 0px;
+  flex-shrink: 0;
+}
+header .content .header__search input {
+  box-sizing: border-box;
+  padding: 5px 9px;
+  width: 148px;
+  height: 34px;
+  font-size: 16px;
+  color: #4a4a4a;
+  border-radius: 3px;
+  border: none;
+  background-color: #f6f6f6;
+}
+header .content .header__search input:hover {
+  border: 1px solid #c8c8c8;
+}
+header .content .header__search input:focus {
+  border: 1px solid #c8c8c8;
+  outline: none;
+  box-shadow: inset 0px 0px 0 2px #1dc078;
+}
+header .content .header__search i {
+  /* transform: translateX(-30px); */
+  position: absolute;
+  right: 9px;
+}
+
+/* LOGIN, SIGNIN */
+header .content .header__login-join {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 36px;
+  gap: 10px;
+}
+header .content .header__login-join .btn {
+  height: 34px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  padding: 9px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+header .content .header__login-join .btn.btn--login {
+  color: #4a4a4a;
+  background-color: white;
+}
+header .content .header__login-join .btn.btn--join {
+  color: white;
+  background-color: #f77867;
+}

@@ -12,14 +12,12 @@
   background-image: url("../../../images/images/bg.jpg");
   background-size: cover;
 }
-
 .container .sub_container .heroes {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 5%;
 }
-
 .container .sub_container .heroes .hero {
   width: 80px;
   height: 90px;
@@ -30,7 +28,6 @@
   background-color: gray;
   overflow: hidden;
 }
-
 .container .sub_container .heroes .hero:hover {
   z-index: 1;
   background-color: orange;
@@ -39,7 +36,6 @@
   transition: background-color 0.5s, transform 0.1s;
   cursor: pointer;
 }
-
 .container .sub_container .heroes .hero .image {
   width: 100%;
   height: 100%;
