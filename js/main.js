@@ -46,6 +46,8 @@ for (let i = 0; i < nameArr.length; i++) {
 //js data type
 let arr = {
   name: "dbswp",
+  age: "26",
+  hobby: [soccer, basketball],
 };
 console.log(typeof 1, "isn't", typeof "string", "data type");
 console.log(
