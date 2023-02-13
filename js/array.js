@@ -174,3 +174,141 @@
 // user2.sayHell();
 // user3.sayHell();
 // user4.sayHell();
+
+//Class
+// const hyundai1 = new ConstructorCar("hyundai", "blue");
+// console.log(hyundai1);
+// hyundai1.drive();
+
+// function ConstructorCar(brand, color) {
+//   this.brand = brand;
+//   this.color = color;
+//   this.drive = () => {
+//     console.log(`${this.brand}의 ${this.color}색 자동차가 주행 중입니다.`);
+//   };
+// }
+
+// const porsche = new Car("porsche", "black");
+// const kia = new Car("kia", "white");
+
+// ------> class 버전
+// class에는 암묵적으로 strict mode가 기본적으로 실행된다.
+// 상속이 더 편하다 -> extends 키워드로 상속 !!!!
+// 정적 매소드 사용 방식이 다르다. -> Static 키워드 사용
+// 우선 선언하고 인스턴스화
+// class ClassCar {
+//   constructor(brand, color) {
+//     this.brand = brand;
+//     this.color = color;
+//   }
+//   showSpec() {
+//     console.log(`${this.brand}의 ${this.color}색 자동차가 주행 중입니다.`);
+//   }
+// }
+
+// const hyundai = new ClassCar("hyundai", "blue");
+
+// console.log(hyundai);
+// hyundai.showSpec();
+
+//상속
+// class는 extends와 super를 사용하여 상속받는다 (이게 편함)
+// class ElecCar extends ClassCar {
+//   constructor(brand, color, fuel) {
+//     super(brand, color);
+//     this.fuel = fuel;
+//   }
+//   // showFuel() {
+//   //   console.log(`해당 자동차는 ${this.fuel}의 힘으로 움직인다.`);
+//   // }
+//   showSpec() {
+//     super.showSpec();
+//     console.log(`그리고 이차는 ${this.fuel}의 힘으로 움직입니다.`);
+//   } // overriding 해서 상속받은 클래스에서 임의로 변경하여 사용
+// }
+// const tesla = new ElecCar("tesla", "red", "elec");
+// console.log(tesla);
+// tesla.showSpec();
+
+// console.log(hyundai instanceof ClassCar);
+// console.log(tesla instanceof ElecCar);
+
+//이거는 생성자 함수로 상속받는 거
+// function ElecCar(brand, color, fuel) {
+//   ClassCar.call(this, brand, color);
+//   this.fuel = fuel;
+//   this.drive = function () {
+//     console.log(
+//       `${this.brand}의 ${this.color}색 자동차가 ${this.fuel} 의 힘으로 주행 중입니다.`
+//     );
+//   };
+// }
+
+// ElecCar.prototype = Object.create(ClassCar.prototype);
+// ElecCar.prototype.constructor = ElecCar;
+
+// const tesla = new ElecCar("tesla", "white", "elec");
+// console.log(tesla);
+// tesla.drive();
+
+//실습
+class Shape {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+  }
+  getArea = function () {
+    console.log(
+      `Shape의 넓이는 ${this.width}*${this.height} = `,
+      this.width * this.height,
+      "이다."
+    );
+  };
+}
+class Ractangle extends Shape {
+  constructor(width, height) {
+    super(width, height);
+  }
+  getArea = function () {
+    console.log(
+      `Ractangle의 넓이는 ${this.width}*${this.height} = `,
+      this.width * this.height,
+      "이다."
+    );
+  };
+}
+class Triangle extends Shape {
+  constructor(width, height) {
+    super(width, height);
+  }
+  getArea = function () {
+    console.log(
+      `Triangle의 넓이는 ${this.width}*${this.height} / 2 = `,
+      (this.width * this.height) / 2,
+      "이다."
+    );
+  };
+}
+class Circle extends Shape {
+  constructor(width, height, radius) {
+    super(width, height);
+    this.radius = radius;
+  }
+  getArea = function () {
+    console.log(
+      `Circle의 넓이는 ${this.radius}*${this.radius}*파이값 = `,
+      this.radius * this.radius * Math.PI,
+      "이다."
+    );
+  };
+}
+
+const shape = new Shape(10, 20);
+const ractangle = new Ractangle(10, 30);
+const triangle = new Triangle(10, 40);
+const circle = new Circle(10, 10, 10);
+
+shape.getArea();
+ractangle.getArea();
+triangle.getArea();
+circle.getArea();
