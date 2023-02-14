@@ -290,6 +290,7 @@ class Triangle extends Shape {
   };
 }
 class Circle extends Shape {
+  // 필요한 값만 매개변수로 받아도 되지만, super 필수 입력!
   constructor(width, height, radius) {
     super(width, height);
     this.radius = radius;
@@ -300,6 +301,7 @@ class Circle extends Shape {
       this.radius * this.radius * Math.PI,
       "이다."
     );
+    //return 으로 바로 계산 가능햣 ㅣㅐ
   };
 }
 
