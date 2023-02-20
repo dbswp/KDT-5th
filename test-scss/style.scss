@@ -1,0 +1,92 @@
+@import "./reset";
+@import "./mixin";
+
+// 변수 선언
+$body-bg: #eee;
+$wrap-border: #ddd;
+$wrap__item-bg: #333;
+// $wrap__item-bg: #fff;
+$wrap__item_h2: #333;
+$wrap__item_p: #777;
+$btn-bg: tomato;
+$btn-font: white;
+$wrap__item-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+
+// Main
+
+body {
+  background-color: $body-bg;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 100px;
+  border: 2px solid $wrap-border;
+  // perspective: 600px;
+
+  &:hover {
+    .item {
+      // wrap에 hover가 일어나면 item이 바뀜
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  // &는 자기자신 선택자 -> 가상요소 사용가능
+  .item {
+    width: 300px;
+    padding: 30px;
+    background-color: $wrap__item-bg;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: $wrap__item-shadow;
+    transform: translateY(100px);
+    transition: 0.6s;
+    opacity: 0;
+
+    // @for $i from 1 to 5 {
+    //   &:nth-child(#{$i}) {
+    //     transition-delay: $interval * $i;
+    //   }
+    // }
+
+    h2 {
+      /* /로 line-height 속성 부여 */
+      font-size: bold 30px/1 "arial";
+      margin-bottom: 20px;
+      // if문에서는 "==" 사용
+      @if $wrap__item-bg == #fff {
+        color: $wrap__item_h2;
+      } @else {
+        color: white;
+      }
+    }
+
+    p {
+      font: normal 16px/1.5 "arial";
+      @if $wrap__item-bg == #fff {
+        color: $wrap__item_p;
+      } @else {
+        color: white;
+      }
+    }
+
+    $interval: 0.3s;
+    $bgColors: (orange, hotpink, aqua, lightgreen);
+    @each $el in $bgColors {
+      $index: index($bgColors, $el);
+      &:nth-child(#{$index}) {
+        transition-delay: $interval * $index;
+        a {
+          @include button($bg-color: $el);
+        }
+      }
+    }
+
+    a {
+      @include button($width: 100%, $bg-color: $btn-bg, $font-color: $btn-font);
+    }
+  }
+}
